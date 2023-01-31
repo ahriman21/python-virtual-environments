@@ -6,13 +6,6 @@ how to use different python environments
 ###### how to create a virtual environment using `venv` :
 ```
 python -m venv <my_venv_name>
-
-```
-###### how to activate :
-> go to  dir of your env and write code below :
-```
-.../<your_env_name>/scripts/activate
-
 ```
 
 --- 
@@ -20,16 +13,30 @@ python -m venv <my_venv_name>
 ## 2- virtualenv
 ###### to use `virtualenv` you need to install it :  
 ```
-pip3 install virtualenv
+pip install virtualenv
 
 ```
 ###### how to to create a virutal-environment using `virtualenv` :
 ```
 virtualenv <my_env_name>
-
 ```
+
 
 ---
 
 ## 3- pipenv
+###### to use `pipenv` you need to install it :
+```
+pip install --user pipenv
+```
 
+###### how to to create a virutal-environment using `pipenv` :
+> `pipenv` is a litle bit different from other env-tools . using code below , you can create and connect to your env.
+```
+pipenv shell
+```
+
+##### how to install a package using `pipenv`:
+```
+pipenv install <package>
+```
